@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "dinerova-web",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8743"],
+      "port": 8743
+    },
+    {
+      "name": "dinerova-web-alt",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8744"],
+      "port": 8744
+    }
+  ]
+}

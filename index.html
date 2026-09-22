@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dinerova — Tus finanzas, solo tuyas</title>
+<meta name="description" content="Dinerova: gestiona tus gastos fotografiando tus tickets, 100% local en tu dispositivo, sin servidores ni cuentas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23D9793F'/%3E%3Cpath d='M64 12 L36 32 L36 88 A28 28 0 0 0 36 32' fill='none' stroke='white' stroke-width='13' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="#" class="brand">
+    <svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true">
+      <path d="M64 12 L36 32 L36 88 A28 28 0 0 0 36 32" fill="none" stroke="var(--accent)" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="brand-name">Dinerova</span>
+  </a>
+  <nav class="header-nav">
+    <a href="#precio" class="nav-link">Precio</a>
+    <a href="#lista-espera" class="btn btn-primary btn-small">Lista de espera</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero container">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h1>Tus finanzas,<br>solo tuyas.</h1>
+        <p class="hero-subtitle">
+          Fotografía tus tickets y Dinerova los convierte en movimientos
+          listos para revisar. Controla tus gastos e ingresos con
+          categorías que ya entienden el IVA español — todo 100% local,
+          sin nubes ni servidores.
+        </p>
+        <div class="hero-actions" id="lista-espera">
+          <div class="waitlist-embed">
+            <h3>Sé de los primeros en probarla</h3>
+            <div class="waitlist-embed-frame">
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdHA9sRvu2fSP7GxG12A5NbdZglZnwLERgz59-u8bcqO2mC4g/viewform?embedded=true" width="640" height="638" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+            </div>
+          </div>
+        </div>
+        <p class="hero-note">En pruebas privadas ahora mismo · Publicación en Google Play próximamente</p>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="phone-mockup">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <img
+              class="phone-screenshot"
+              src="assets/screenshots/dinerova-home.png"
+              alt=""
+              width="1080"
+              height="2400"
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <p class="section-eyebrow reveal">Por qué Dinerova</p>
+    <h2 class="section-title reveal">Pensada para que no pienses en ella</h2>
+    <div class="features">
+      <article class="feature-card reveal">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3 L19 6 V11 C19 15.5 16 19 12 21 C8 19 5 15.5 5 11 V6 Z"/>
+            <path d="M9 12 L11 14 L15 9.5"/>
+          </svg>
+        </div>
+        <h3>Privacidad real</h3>
+        <p>
+          Dinerova no tiene servidor propio. Tus movimientos, categorías y
+          fotos de tickets se guardan cifrados en tu propio dispositivo, y
+          nunca salen de él salvo que tú decidas exportarlos.
+        </p>
+      </article>
+      <article class="feature-card reveal">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13 3 L5 14 H11 L10 21 L19 10 H13 Z"/>
+          </svg>
+        </div>
+        <h3>Captura ultrarrápida</h3>
+        <p>
+          Haz una foto al ticket y el reconocimiento automático de texto
+          rellena el importe, la fecha y el comercio por ti. Revisas,
+          confirmas y listo.
+        </p>
+      </article>
+      <article class="feature-card reveal">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="7" cy="7" r="2.5"/>
+            <circle cx="17" cy="17" r="2.5"/>
+            <line x1="19" y1="5" x2="5" y2="19"/>
+          </svg>
+        </div>
+        <h3>Precisión fiscal española</h3>
+        <p>
+          Cada categoría lleva ya configurado el tipo de IVA correcto, así
+          que la base imponible y el impuesto se calculan solos al
+          capturar un gasto.
+        </p>
+      </article>
+      <article class="feature-card reveal">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="4,17 9,12 13,15 20,6"/>
+            <polyline points="15,6 20,6 20,11"/>
+          </svg>
+        </div>
+        <h3>Resumen siempre a mano</h3>
+        <p>
+          Consulta tu balance del mes o repasa el año completo cuando te
+          apetezca, sin tener que montarlo tú.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="container">
+    <p class="section-eyebrow reveal">Cómo funciona</p>
+    <h2 class="section-title reveal">Tres pasos, nada más</h2>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-number">1</div>
+        <h3>Fotografía un ticket, o añádelo a mano</h3>
+        <p>Elige lo que te resulte más rápido en cada momento.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-number">2</div>
+        <h3>Dinerova organiza todo sola</h3>
+        <p>Sin teclear nada: revisas el resultado y confirmas.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-number">3</div>
+        <h3>Consulta tu resumen cuando quieras</h3>
+        <p>Del día a día al balance anual, siempre a mano.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing-band">
+    <div class="container" id="precio">
+      <p class="section-eyebrow reveal">Precio</p>
+      <h2 class="section-title reveal">Sin sorpresas, sin presión</h2>
+      <div class="pricing-card reveal">
+        <div class="pricing-badge">30 días de prueba gratuita, sin tarjeta</div>
+        <div class="pricing-amount">1€<span>/mes después</span></div>
+        <ul class="pricing-list">
+          <li>Sin anuncios</li>
+          <li>Sin límites artificiales de uso</li>
+          <li>Cancela cuando quieras</li>
+        </ul>
+        <div class="waitlist-embed">
+          <h3>Sé de los primeros en probarla</h3>
+          <div class="waitlist-embed-frame">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdHA9sRvu2fSP7GxG12A5NbdZglZnwLERgz59-u8bcqO2mC4g/viewform?embedded=true" width="640" height="638" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+          </div>
+        </div>
+        <p class="pricing-note">
+          Prueba la app con calma durante 30 días y decide después si te
+          compensa. Si no, simplemente no sigue.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container download-section reveal">
+    <h2 class="section-title">Descarga Dinerova</h2>
+    <p class="hero-subtitle" style="margin-inline: auto;">
+      Dinerova está en pruebas privadas ahora mismo. En cuanto esté
+      publicada en Google Play, avisaremos primero a quien se haya
+      apuntado a la lista de espera.
+    </p>
+    <p class="download-note">
+      <a href="#lista-espera">↑ Apúntate a la lista de espera</a>
+    </p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-content">
+    <span>© 2026 Dinerova</span>
+    <div class="footer-links">
+      <a href="privacidad.html">Política de privacidad</a>
+      <a href="mailto:vbarranteslabrada@gmail.com">Contacto</a>
+      <!--
+        TODO (victor): cuando Dinerova tenga redes sociales, añade aquí
+        los enlaces, ej.:
+        <div class="footer-social">
+          <a href="https://instagram.com/..." aria-label="Instagram"><svg ...></svg></a>
+        </div>
+        El contenedor .footer-social ya está preparado y se oculta solo
+        (regla ":empty") mientras esté vacío.
+      -->
+      <div class="footer-social"></div>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

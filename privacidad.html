@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de privacidad — Dinerova</title>
+<meta name="description" content="Política de privacidad de Dinerova: qué datos genera la app, dónde se guardan y qué sale de tu dispositivo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23D9793F'/%3E%3Cpath d='M64 12 L36 32 L36 88 A28 28 0 0 0 36 32' fill='none' stroke='white' stroke-width='13' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="site-header container">
+  <a href="index.html" class="brand">
+    <svg width="32" height="32" viewBox="0 0 100 100" aria-hidden="true">
+      <path d="M64 12 L36 32 L36 88 A28 28 0 0 0 36 32" fill="none" stroke="var(--accent)" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="brand-name">Dinerova</span>
+  </a>
+  <a href="index.html" class="btn btn-primary btn-small">Volver</a>
+</header>
+
+<main class="container">
+  <div class="legal-content">
+    <a href="index.html" class="back-link">&larr; Volver a Dinerova</a>
+
+    <h1>Política de privacidad de Dinerova</h1>
+    <p class="legal-updated">Última actualización: 17 de agosto de 2026.</p>
+
+    <p>
+      Dinerova es una aplicación de finanzas personales diseñada para
+      funcionar íntegramente en tu dispositivo. Este documento explica, con
+      la mayor precisión posible, qué datos genera la app, dónde se guardan
+      y qué sale (o no) de tu teléfono.
+    </p>
+
+    <h2>1. Tus datos financieros nunca salen del dispositivo</h2>
+    <p>
+      Todos los movimientos, categorías, cierres mensuales y demás datos que
+      introduces en Dinerova se guardan en una base de datos SQLite cifrada
+      (SQLite3MultipleCiphers) almacenada localmente en tu dispositivo. La
+      clave de cifrado se genera de forma aleatoria en el primer uso y se
+      guarda en el almacenamiento seguro del sistema operativo (Android
+      Keystore o Keychain de iOS, según la plataforma).
+    </p>
+    <p>
+      Dinerova no tiene servidor propio ni backend de ningún tipo. No existe
+      ninguna función en la app que suba, sincronice o transmita tus datos
+      financieros a Internet. Todo el procesamiento ocurre en tu dispositivo.
+    </p>
+    <p>
+      La única forma en que tus datos financieros pueden llegar a salir del
+      dispositivo es si tú decides exportarlos de forma explícita, mediante
+      una copia de seguridad o una exportación a CSV (ver sección 8). Nunca
+      ocurre de forma automática ni sin que tú lo pidas.
+    </p>
+
+    <h2>2. Reconocimiento de texto de tickets (OCR)</h2>
+    <p>
+      Cuando fotografías un ticket o una nómina, el texto se extrae con
+      Google ML Kit Text Recognition en su modalidad <strong>on-device</strong>:
+      el modelo de reconocimiento se ejecuta localmente y ni la imagen ni el
+      texto extraído se envían a ningún servidor de Dinerova ni de Google
+      como parte de ese procesamiento.
+    </p>
+    <p>
+      Con una precisión técnica que no queremos suavizar: ML Kit se apoya en
+      Google Play Services en dispositivos Android, y ese componente del
+      sistema puede enviar a Google telemetría de uso anónima (por ejemplo,
+      estadísticas de funcionamiento del propio SDK) cuando el dispositivo
+      tiene conexión a Internet. Esto se verificó de forma explícita durante
+      el desarrollo de Dinerova (Fase 3A), inspeccionando el tráfico y los
+      logs del sistema en un dispositivo real. Esa telemetría es una
+      funcionalidad de la plataforma Google Play Services, no algo que
+      Dinerova active, configure ni pueda desactivar por sí misma; y en
+      ningún caso incluye el contenido de tus tickets, el texto reconocido
+      ni ningún otro dato financiero, que permanecen exclusivamente en el
+      almacenamiento local y cifrado de la app.
+    </p>
+
+    <h2>3. Fotos de tickets y nóminas</h2>
+    <p>
+      Las fotografías que capturas o seleccionas de la galería se guardan
+      <strong>cifradas</strong> (AES-256, con una clave propia gestionada por
+      el almacenamiento seguro del sistema operativo, igual criterio que la
+      base de datos) en una carpeta privada de la app en el almacenamiento
+      del dispositivo, y se asocian al movimiento correspondiente. Ni la foto
+      original ni la versión cifrada se suben nunca a ningún servidor: en
+      ningún momento se guarda una copia sin cifrar en el disco; el
+      descifrado, cuando haga falta, ocurre solo en memoria y en tu propio
+      dispositivo.
+    </p>
+    <p>
+      Cuando borras un movimiento que tiene una foto de ticket asociada, esa
+      foto se borra también del almacenamiento del dispositivo en el mismo
+      momento: borrar un movimiento es un borrado completo, no deja archivos
+      huérfanos. Si quieres eliminar todas tus fotos de golpe sin borrar la
+      app entera, la opción "Borrar todos mis datos" de Ajustes (ver sección
+      7) también las borra a todas.
+    </p>
+
+    <h2>4. Bloqueo biométrico / PIN</h2>
+    <p>
+      Si activas el bloqueo de acceso (activado por defecto), Dinerova pide
+      huella dactilar, reconocimiento facial o el PIN/patrón del sistema
+      antes de mostrar cualquier dato al abrir la app o al volver de segundo
+      plano. Esta verificación la realiza directamente el sistema operativo
+      de tu dispositivo: Dinerova nunca ve, procesa ni almacena tu huella, tu
+      rostro ni tu PIN, solo recibe un resultado de "verificado" o "no
+      verificado".
+    </p>
+
+    <h2>5. Sin cuentas, sin analítica propia, sin publicidad</h2>
+    <p>
+      Dinerova no requiere crear ninguna cuenta ni iniciar sesión. No integra
+      ningún SDK de analítica, medición o publicidad propio de terceros
+      (tipo Google Analytics, Firebase Analytics, Meta, etc.). No se muestran
+      anuncios. La única excepción a "nada sale del dispositivo" es la
+      telemetría de Google Play Services descrita en la sección 2, ajena al
+      control directo de la app.
+    </p>
+
+    <h2>6. Compras dentro de la app</h2>
+    <p>
+      Si Dinerova ofrece compras o suscripciones dentro de la app, estas se
+      gestionan a través de la tienda de aplicaciones de tu dispositivo
+      (Google Play / App Store), que procesa el pago según su propia
+      política de privacidad. Dinerova no almacena ni tiene acceso a tus
+      datos de pago.
+    </p>
+
+    <h2>7. Tus derechos sobre tus datos</h2>
+    <p>
+      Como todos tus datos están únicamente en tu dispositivo, tú tienes
+      control total sobre ellos en todo momento, con herramientas concretas
+      dentro de la propia app, no solo como declaración de intenciones:
+    </p>
+    <ul>
+      <li>Puedes consultar y editar cualquier movimiento o categoría.</li>
+      <li>
+        Puedes eliminar un movimiento concreto (y su foto de ticket
+        asociada, si la tenía) desde su pantalla de edición, con una
+        confirmación explícita que muestra qué se va a borrar antes de
+        hacerlo.
+      </li>
+      <li>
+        Puedes borrar TODOS tus datos de golpe desde Ajustes → "Borrar todos
+        mis datos": todos los movimientos, todas las fotos de tickets y, si
+        lo eliges explícitamente, también tus categorías personalizadas (las
+        categorías por defecto se recrean, igual que en el primer uso). Esta
+        acción pide una confirmación reforzada porque es irreversible.
+      </li>
+      <li>
+        Como alternativa definitiva, desinstalar la app elimina toda su
+        carpeta de datos igualmente.
+      </li>
+    </ul>
+
+    <h2>8. Copias de seguridad y exportaciones manuales</h2>
+    <p>
+      Dinerova incluye dos formas de sacar tus datos del dispositivo, ambas
+      iniciadas siempre por ti desde Ajustes; ninguna de las dos ocurre
+      automáticamente ni en segundo plano.
+    </p>
+    <ul>
+      <li>
+        <strong>Copia de seguridad</strong>: genera un único archivo con
+        todos tus datos (movimientos, categorías, plantillas, objetivos,
+        presupuestos, logros y fotos de tickets incluidas) cifrado con una
+        contraseña que eliges tú en el momento de exportar. Sin esa
+        contraseña, el archivo no se puede leer; Dinerova no la guarda ni la
+        conoce, así que si la olvidas no hay forma de recuperarla. Dónde
+        guardas o con quién compartes ese archivo (Google Drive, un pendrive,
+        etc.) queda fuera del control de la app: es tu copia, y su seguridad
+        final depende de dónde la dejes y de lo fuerte que sea la contraseña
+        elegida.
+      </li>
+      <li>
+        <strong>Exportación a CSV</strong>: genera un archivo de texto plano
+        con tus movimientos, pensado para abrirlo en una hoja de cálculo. A
+        diferencia de la copia de seguridad, este archivo <strong>no va
+        cifrado</strong>: cualquiera que acceda a él puede leer su contenido
+        directamente. La propia app te avisa de esto antes de exportar; lo
+        repetimos aquí porque es la única exportación de Dinerova que no
+        lleva cifrado.
+      </li>
+    </ul>
+    <p>
+      En ambos casos, generar el archivo es solo un paso; qué haces con él
+      después (guardarlo, subirlo a un servicio en la nube, enviarlo por
+      correo) es una decisión tuya y sucede fuera de Dinerova.
+    </p>
+
+    <h2>9. Cambios en esta política</h2>
+    <p>
+      Si esta política cambia porque se añaden nuevas funciones que afecten
+      a cómo se tratan tus datos, actualizaremos este documento y la fecha
+      de la cabecera.
+    </p>
+
+    <h2>10. Contacto</h2>
+    <p>
+      Para dudas, problemas o sugerencias sobre Dinerova, puedes escribir a
+      <a href="mailto:vbarranteslabrada@gmail.com">vbarranteslabrada@gmail.com</a>.
+    </p>
+    <p>
+      <em>Nota: esta es una dirección de contacto temporal para la fase de
+      pruebas con un grupo cerrado de usuarios. Podrá revisarse antes de una
+      eventual publicación en las tiendas de aplicaciones.</em>
+    </p>
+  </div>
+</main>
+
+<footer class="site-footer container">
+  <div class="footer-content">
+    <span>© 2026 Dinerova</span>
+    <div class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="mailto:vbarranteslabrada@gmail.com">Contacto</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
