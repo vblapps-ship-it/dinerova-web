@@ -705,7 +705,8 @@ section {
   margin-top: var(--space-xxl);
 }
 
-.legal-content ul {
+.legal-content ul,
+.legal-content ol {
   color: var(--on-surface);
 }
 
