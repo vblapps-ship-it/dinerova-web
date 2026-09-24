@@ -118,6 +118,9 @@ a {
 }
 
 .brand {
+  /* Zona táctil de 44px sin cambiar la altura de la cabecera. */
+  padding-block: 7px;
+  margin-block: -7px;
   display: flex;
   align-items: center;
   gap: var(--space-sm);
@@ -567,6 +570,9 @@ section {
 }
 
 .download-note a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   font-weight: 600;
 }
 
@@ -682,6 +688,9 @@ section {
 }
 
 .footer-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   color: var(--on-surface-muted);
 }
 
@@ -738,7 +747,9 @@ section {
 }
 
 .back-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   margin-bottom: var(--space-xl);
 }
 

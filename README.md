@@ -63,6 +63,18 @@ dentro de `dinerova` (el repo de la app), por dos razones:
    <a href="https://play.google.com/store/apps/details?id=com.tuempresa.dinerova" class="btn btn-primary">Descargar en Google Play</a>
    ```
 
+3. **Redes sociales**: cuando Dinerova tenga redes, añade los enlaces
+   dentro de `<div class="footer-social"></div>` en el pie de
+   `index.html`, ej.:
+
+   ```html
+   <a href="https://instagram.com/..." aria-label="Instagram"><svg ...></svg></a>
+   ```
+
+   El contenedor ya está preparado y se oculta solo (regla `:empty`)
+   mientras esté vacío. (Esta nota vivía antes como comentario en el HTML;
+   se movió aquí porque el README no se publica en la web.)
+
 ## Cómo publicarlo con GitHub Pages (gratis)
 
 1. Crea un repositorio nuevo en GitHub (por ejemplo `dinerova-web`),

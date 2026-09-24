@@ -25,12 +25,49 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23D9793F'/%3E%3Cpath d='M64 12 L36 32 L36 88 A28 28 0 0 0 36 32' fill='none' stroke='white' stroke-width='13' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dinerova.vblapps.com/#organization",
+      "name": "VBLapps",
+      "email": "soporte@vblapps.com",
+      "logo": "https://dinerova.vblapps.com/assets/logo/dinerova-logo-fondo.png"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dinerova.vblapps.com/#website",
+      "url": "https://dinerova.vblapps.com/",
+      "name": "Dinerova",
+      "inLanguage": "es-ES",
+      "publisher": { "@id": "https://dinerova.vblapps.com/#organization" }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://dinerova.vblapps.com/#app",
+      "name": "Dinerova",
+      "url": "https://dinerova.vblapps.com/",
+      "description": "App de finanzas personales: fotografía tus tickets y controla tus gastos e ingresos con el IVA español ya calculado. 100% local en tu dispositivo, sin servidores ni cuentas.",
+      "operatingSystem": "Android",
+      "applicationCategory": "FinanceApplication",
+      "inLanguage": "es-ES",
+      "image": "https://dinerova.vblapps.com/assets/og/dinerova-og.png",
+      "screenshot": "https://dinerova.vblapps.com/assets/screenshots/dinerova-home.png",
+      "publisher": { "@id": "https://dinerova.vblapps.com/#organization" }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
 <header class="site-header">
-  <a href="#" class="brand">
+  <a href="/" class="brand">
     <svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true">
       <path d="M64 12 L36 32 L36 88 A28 28 0 0 0 36 32" fill="none" stroke="var(--accent)" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
@@ -58,7 +95,7 @@
           <div class="waitlist-embed">
             <p class="waitlist-embed-title">Sé de los primeros en probarla</p>
             <div class="waitlist-embed-frame">
-              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdHA9sRvu2fSP7GxG12A5NbdZglZnwLERgz59-u8bcqO2mC4g/viewform?embedded=true" width="640" height="638" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+              <iframe title="Formulario para apuntarse a la lista de espera de Dinerova" src="https://docs.google.com/forms/d/e/1FAIpQLSdHA9sRvu2fSP7GxG12A5NbdZglZnwLERgz59-u8bcqO2mC4g/viewform?embedded=true" width="640" height="638" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
             </div>
           </div>
         </div>
@@ -69,13 +106,20 @@
         <div class="phone-mockup">
           <div class="phone-notch"></div>
           <div class="phone-screen">
-            <img
-              class="phone-screenshot"
-              src="assets/screenshots/dinerova-home.png"
-              alt=""
-              width="1080"
-              height="2400"
-            >
+            <picture>
+              <source
+                type="image/webp"
+                srcset="assets/screenshots/dinerova-home-360.webp 360w, assets/screenshots/dinerova-home-720.webp 720w"
+                sizes="232px"
+              >
+              <img
+                class="phone-screenshot"
+                src="assets/screenshots/dinerova-home.png"
+                alt=""
+                width="1080"
+                height="2400"
+              >
+            </picture>
           </div>
         </div>
       </div>
@@ -181,7 +225,7 @@
         <div class="waitlist-embed">
           <p class="waitlist-embed-title">Sé de los primeros en probarla</p>
           <div class="waitlist-embed-frame">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdHA9sRvu2fSP7GxG12A5NbdZglZnwLERgz59-u8bcqO2mC4g/viewform?embedded=true" width="640" height="638" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+            <iframe title="Formulario para apuntarse a la lista de espera de Dinerova (sección de precio)" loading="lazy" src="https://docs.google.com/forms/d/e/1FAIpQLSdHA9sRvu2fSP7GxG12A5NbdZglZnwLERgz59-u8bcqO2mC4g/viewform?embedded=true" width="640" height="638" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
           </div>
         </div>
         <p class="pricing-note">
@@ -213,15 +257,6 @@
       <a href="privacidad.html">Política de privacidad</a>
       <a href="eliminar-datos.html">Eliminar mis datos</a>
       <a href="mailto:soporte@vblapps.com">Contacto</a>
-      <!--
-        TODO (victor): cuando Dinerova tenga redes sociales, añade aquí
-        los enlaces, ej.:
-        <div class="footer-social">
-          <a href="https://instagram.com/..." aria-label="Instagram"><svg ...></svg></a>
-        </div>
-        El contenedor .footer-social ya está preparado y se oculta solo
-        (regla ":empty") mientras esté vacío.
-      -->
       <div class="footer-social"></div>
     </div>
   </div>
