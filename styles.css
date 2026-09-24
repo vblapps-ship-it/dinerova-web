@@ -585,7 +585,7 @@ section {
   max-width: 100%;
 }
 
-.waitlist-embed h3 {
+.waitlist-embed .waitlist-embed-title {
   margin: 0 0 var(--space-md);
   font-size: 1.05rem;
   font-weight: 700;
@@ -602,15 +602,9 @@ section {
   display: block;
   width: 100%;
   max-width: 640px;
-  height: 638px;
+  height: 740px;
   margin: 0 auto;
   border: none;
-}
-
-@media (max-width: 480px) {
-  .waitlist-embed iframe {
-    height: 760px;
-  }
 }
 
 /* La tarjeta de precio siempre es angosta (max-width: 460px), así que su
@@ -618,6 +612,34 @@ section {
    ventana, no solo en móvil. */
 .pricing-card .waitlist-embed iframe {
   height: 760px;
+}
+
+/* Móvil. Google Forms no ajusta su alto al iframe (es de otro origen),
+   así que hay que darle alto fijo suficiente para que no aparezca un
+   scroll interno. Su alto crece mucho al estrecharse: ~750px a 325px de
+   ancho, ~900px a 290px, ~955px a 260px (el título pasa a 4 líneas). Por
+   eso aquí se le quita el relleno lateral al contenedor (más ancho útil)
+   y se sube el alto de cada embebido según el ancho que le queda. */
+@media (max-width: 480px) {
+  .waitlist-embed {
+    padding: var(--space-md) 0 0;
+  }
+
+  .waitlist-embed .waitlist-embed-title {
+    padding-inline: var(--space-lg);
+  }
+
+  .waitlist-embed iframe {
+    height: 860px;
+  }
+
+  .pricing-card {
+    padding-inline: var(--space-lg);
+  }
+
+  .pricing-card .waitlist-embed iframe {
+    height: 960px;
+  }
 }
 
 /* Screenshot placeholders */

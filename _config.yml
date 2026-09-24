@@ -1,0 +1,4 @@
+# GitHub Pages (Jekyll): archivos del repo que NO se publican en la web.
+# README.md contiene notas internas del proyecto.
+exclude:
+  - README.md
