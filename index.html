@@ -2,261 +2,181 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dinerova: app de gastos con foto del ticket, 100% privada</title>
-<meta name="description" content="Dinerova: gestiona tus gastos fotografiando tus tickets, 100% local en tu dispositivo, sin servidores ni cuentas.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DineroVa: app de control de gastos privada, escanea tus tickets</title>
+<meta name="description" content="Controla tus gastos haciendo una foto al ticket. Sin conectar tu banco y sin nube: tus datos se quedan en tu móvil. 30 días gratis, sin tarjeta.">
 <link rel="canonical" href="https://dinerova.vblapps.com/">
+<meta name="theme-color" content="#F7F0E4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1C1712" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Dinerova">
+<meta property="og:site_name" content="DineroVa">
 <meta property="og:locale" content="es_ES">
 <meta property="og:url" content="https://dinerova.vblapps.com/">
-<meta property="og:title" content="Dinerova: app de gastos con foto del ticket, 100% privada">
-<meta property="og:description" content="Fotografía tus tickets y controla tus gastos con el IVA español ya calculado. 100% local en tu móvil: sin servidores, sin cuentas, sin anuncios. Apúntate a la lista de espera.">
+<meta property="og:title" content="DineroVa: haz una foto al ticket y controla tus gastos">
+<meta property="og:description" content="Controla tus gastos haciendo una foto al ticket. Sin conectar tu banco y sin nube: tus datos se quedan en tu móvil. 30 días gratis, sin tarjeta.">
 <meta property="og:image" content="https://dinerova.vblapps.com/assets/og/dinerova-og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Dinerova: logo, lema «Tus finanzas, solo tuyas» y captura de la app en un móvil">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Dinerova: app de gastos con foto del ticket, 100% privada">
-<meta name="twitter:description" content="Fotografía tus tickets y controla tus gastos con el IVA español ya calculado. 100% local en tu móvil: sin servidores, sin cuentas, sin anuncios. Apúntate a la lista de espera.">
+<meta name="twitter:title" content="DineroVa: haz una foto al ticket y controla tus gastos">
+<meta name="twitter:description" content="Controla tus gastos haciendo una foto al ticket. Sin conectar tu banco y sin nube: tus datos se quedan en tu móvil. 30 días gratis, sin tarjeta.">
 <meta name="twitter:image" content="https://dinerova.vblapps.com/assets/og/dinerova-og.png">
-<meta name="twitter:image:alt" content="Dinerova: logo, lema «Tus finanzas, solo tuyas» y captura de la app en un móvil">
+<meta name="google-play-app" content="app-id=com.dinerova.app.dinerova">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,600..800&family=IBM+Plex+Mono:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css?v=20261112">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://dinerova.vblapps.com/#organization",
-      "name": "VBLapps",
-      "email": "soporte@vblapps.com",
-      "logo": "https://dinerova.vblapps.com/assets/logo/dinerova-logo-fondo.png"
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://dinerova.vblapps.com/#website",
-      "url": "https://dinerova.vblapps.com/",
-      "name": "Dinerova",
-      "inLanguage": "es-ES",
-      "publisher": { "@id": "https://dinerova.vblapps.com/#organization" }
-    },
-    {
-      "@type": "MobileApplication",
-      "@id": "https://dinerova.vblapps.com/#app",
-      "name": "Dinerova",
-      "url": "https://dinerova.vblapps.com/",
-      "description": "App de finanzas personales: fotografía tus tickets y controla tus gastos e ingresos con el IVA español ya calculado. 100% local en tu dispositivo, sin servidores ni cuentas.",
-      "operatingSystem": "Android",
-      "applicationCategory": "FinanceApplication",
-      "inLanguage": "es-ES",
-      "image": "https://dinerova.vblapps.com/assets/og/dinerova-og.png",
-      "screenshot": "https://dinerova.vblapps.com/assets/screenshots/dinerova-home.png",
-      "publisher": { "@id": "https://dinerova.vblapps.com/#organization" }
-    }
-  ]
-}
-</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "DineroVa", "operatingSystem": "ANDROID", "applicationCategory": "FinanceApplication", "description": "App de control de gastos y finanzas personales que escanea tickets y guarda los datos solo en tu móvil, sin conectar el banco.", "url": "https://dinerova.vblapps.com/", "installUrl": "https://play.google.com/store/apps/details?id=com.dinerova.app.dinerova", "inLanguage": "es-ES", "offers": {"@type": "Offer", "price": "1.99", "priceCurrency": "EUR", "description": "30 días gratis sin tarjeta; después 1,99 €/mes o 14,99 €/año"}, "author": {"@type": "Organization", "name": "VBLapps", "url": "https://vblapps.com", "email": "soporte@vblapps.com"}, "publisher": {"@type": "Organization", "name": "VBLapps", "url": "https://vblapps.com", "email": "soporte@vblapps.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Tengo que conectar mi cuenta del banco?", "acceptedAnswer": {"@type": "Answer", "text": "No. DineroVa no pide acceso a tu banco ni a tus tarjetas. Apuntas tus gastos escaneando el ticket o a mano, y tú decides qué entra."}}, {"@type": "Question", "name": "¿Dónde se guardan mis datos?", "acceptedAnswer": {"@type": "Answer", "text": "Solo en tu móvil, en una base de datos cifrada. No hay servidores propios ni nube, y no compartimos ni vendemos nada. Para cambiar de móvil puedes hacer una copia de seguridad cifrada con tu propia contraseña."}}, {"@type": "Question", "name": "¿Funciona sin internet?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, todo funciona sin conexión, incluido el escaneo de tickets: el reconocimiento del texto se hace en el propio móvil."}}, {"@type": "Question", "name": "¿Cuánto cuesta?", "acceptedAnswer": {"@type": "Answer", "text": "Los primeros 30 días son gratis, con todas las funciones y sin poner tarjeta. Después cuesta 1,99 € al mes o 14,99 € al año. No tiene anuncios."}}, {"@type": "Question", "name": "¿Qué pasa si no me suscribo al acabar la prueba?", "acceptedAnswer": {"@type": "Answer", "text": "No pierdes nada: puedes seguir consultando todos tus datos. Para añadir movimientos nuevos necesitas la suscripción."}}, {"@type": "Question", "name": "¿Está disponible para iPhone?", "acceptedAnswer": {"@type": "Answer", "text": "De momento DineroVa está solo para Android, en Google Play."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "DineroVa", "url": "https://dinerova.vblapps.com/", "inLanguage": "es-ES", "publisher": {"@type": "Organization", "name": "VBLapps", "url": "https://vblapps.com", "email": "soporte@vblapps.com"}}</script>
 </head>
 <body>
-
-<header class="site-header">
-  <a href="/" class="brand">
-    <svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true">
-      <path d="M64 12 L36 32 L36 88 A28 28 0 0 0 36 32" fill="none" stroke="var(--accent)" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-    <span class="brand-name">Dinerova</span>
-  </a>
-  <nav class="header-nav">
-    <a href="#precio" class="nav-link">Precio</a>
-    <a href="#lista-espera" class="btn btn-primary btn-small">Lista de espera</a>
-  </nav>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="DineroVa, inicio"><svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1C1712"/><path d="M64 12 L36 32 L36 88 A28 28 0 0 0 36 32" fill="none" stroke="#D9793F" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/></svg>DineroVa</a>
+    <nav class="nav" aria-label="Principal">
+      <a href="/herramientas.html">Calculadoras</a>
+      <a class="hide-sm" href="/#precio">Precio</a>
+      <a class="hide-sm" href="/#preguntas">Preguntas</a>
+      <button class="sound" type="button" aria-pressed="false" aria-label="Sonidos de la web"><svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="m22 9-6 6M16 9l6 6"/></svg><svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg></button>
+    </nav>
+  </div>
 </header>
 
-<main>
-
-  <section class="hero container">
-    <div class="hero-grid">
-      <div class="hero-copy">
-        <h1>Tus finanzas,<br>solo tuyas.</h1>
-        <p class="hero-subtitle">
-          Fotografía tus tickets y Dinerova los convierte en movimientos
-          listos para revisar. Controla tus gastos e ingresos con
-          categorías que ya entienden el IVA español — todo 100% local,
-          sin nubes ni servidores.
-        </p>
-        <div class="hero-actions" id="lista-espera">
-          <div class="waitlist-embed">
-            <p class="waitlist-embed-title">Sé de los primeros en probarla</p>
-            <div class="waitlist-embed-frame">
-              <iframe title="Formulario para apuntarse a la lista de espera de Dinerova" src="https://docs.google.com/forms/d/e/1FAIpQLSdHA9sRvu2fSP7GxG12A5NbdZglZnwLERgz59-u8bcqO2mC4g/viewform?embedded=true" width="640" height="638" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-            </div>
-          </div>
-        </div>
-        <p class="hero-note">En pruebas privadas ahora mismo · Publicación en Google Play próximamente</p>
+<main id="main">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Haz una foto al ticket. DineroVa hace las cuentas.</h1>
+      <p class="lead">Una app de control de gastos que lee tus tickets, los ordena por categorías y te dice cuánto te queda este mes. Sin conectar tu banco y sin que tus datos salgan del móvil.</p>
+      <div class="hero-cta">
+        <a class="btn btn-play " href="https://play.google.com/store/apps/details?id=com.dinerova.app.dinerova" data-play rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M4.6 2.3c-.4.3-.6.8-.6 1.4v16.6c0 .6.2 1.1.6 1.4l9.3-9.7-9.3-9.7z"/><path d="M17.3 8.6 6.5 2.4l8.6 8.9 2.2-2.7zM15.1 12.7l-8.6 8.9 10.8-6.2-2.2-2.7zM20.6 10.6l-2.4-1.4-2.5 2.8 2.5 2.8 2.4-1.4c.9-.6.9-2.2 0-2.8z"/></svg><span><small>Disponible en</small>Google Play</span></a>
+        <a class="btn btn-ghost" href="/herramientas.html">Probar las calculadoras gratis</a>
       </div>
-
-      <div class="hero-visual" aria-hidden="true">
-        <div class="phone-mockup">
-          <div class="phone-notch"></div>
-          <div class="phone-screen">
-            <picture>
-              <source
-                type="image/webp"
-                srcset="assets/screenshots/dinerova-home-360.webp 360w, assets/screenshots/dinerova-home-720.webp 720w"
-                sizes="232px"
-              >
-              <img
-                class="phone-screenshot"
-                src="assets/screenshots/dinerova-home.png"
-                alt=""
-                width="1080"
-                height="2400"
-              >
-            </picture>
-          </div>
-        </div>
-      </div>
+      <p class="hero-note"><strong>30 días gratis, sin tarjeta.</strong> Después, 1,99 €/mes o 14,99 €/año. Sin anuncios.</p>
     </div>
-  </section>
-
-  <section class="container">
-    <p class="section-eyebrow reveal">Por qué Dinerova</p>
-    <h2 class="section-title reveal">Pensada para que no pienses en ella</h2>
-    <div class="features">
-      <article class="feature-card reveal">
-        <div class="feature-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 3 L19 6 V11 C19 15.5 16 19 12 21 C8 19 5 15.5 5 11 V6 Z"/>
-            <path d="M9 12 L11 14 L15 9.5"/>
-          </svg>
-        </div>
-        <h3>Privacidad real</h3>
-        <p>
-          Dinerova no tiene servidor propio. Tus movimientos, categorías y
-          fotos de tickets se guardan cifrados en tu propio dispositivo, y
-          nunca salen de él salvo que tú decidas exportarlos.
-        </p>
-      </article>
-      <article class="feature-card reveal">
-        <div class="feature-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M13 3 L5 14 H11 L10 21 L19 10 H13 Z"/>
-          </svg>
-        </div>
-        <h3>Captura ultrarrápida</h3>
-        <p>
-          Haz una foto al ticket y el reconocimiento automático de texto
-          rellena el importe, la fecha y el comercio por ti. Revisas,
-          confirmas y listo.
-        </p>
-      </article>
-      <article class="feature-card reveal">
-        <div class="feature-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="7" cy="7" r="2.5"/>
-            <circle cx="17" cy="17" r="2.5"/>
-            <line x1="19" y1="5" x2="5" y2="19"/>
-          </svg>
-        </div>
-        <h3>Precisión fiscal española</h3>
-        <p>
-          Cada categoría lleva ya configurado el tipo de IVA correcto, así
-          que la base imponible y el impuesto se calculan solos al
-          capturar un gasto.
-        </p>
-      </article>
-      <article class="feature-card reveal">
-        <div class="feature-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="4,17 9,12 13,15 20,6"/>
-            <polyline points="15,6 20,6 20,11"/>
-          </svg>
-        </div>
-        <h3>Resumen siempre a mano</h3>
-        <p>
-          Consulta tu balance del mes o repasa el año completo cuando te
-          apetezca, sin tener que montarlo tú.
-        </p>
-      </article>
-    </div>
-  </section>
-
-  <section class="container">
-    <p class="section-eyebrow reveal">Cómo funciona</p>
-    <h2 class="section-title reveal">Tres pasos, nada más</h2>
-    <div class="steps">
-      <div class="step reveal">
-        <div class="step-number">1</div>
-        <h3>Fotografía un ticket, o añádelo a mano</h3>
-        <p>Elige lo que te resulte más rápido en cada momento.</p>
+    <div class="scene" aria-label="Un ticket de supermercado se escanea y se convierte en un gasto de 21,93 € en la categoría Alimentación">
+      <div class="receipt" aria-hidden="true">
+        <div class="r-head r-line">SUPERMERCADO LA PLAZA</div>
+        <div class="r-sub r-line">12/11/2026 · 18:42</div>
+        <div class="r-rule r-line"></div>
+        <div class="r-row r-line"><span>Pan de pueblo</span><span>1,35</span></div><div class="r-row r-line"><span>Leche entera 6×1 L</span><span>5,94</span></div><div class="r-row r-line"><span>Tomate pera 1 kg</span><span>2,49</span></div><div class="r-row r-line"><span>Aceite de oliva 1 L</span><span>8,95</span></div><div class="r-row r-line"><span>Huevos L ×12</span><span>3,20</span></div>
+        <div class="r-rule r-line"></div>
+        <div class="r-row r-line r-muted"><span>Base imponible</span><span>21,09</span></div>
+        <div class="r-row r-line r-muted"><span>IVA 4 %</span><span>0,84</span></div>
+        <div class="r-row r-line r-total"><span>TOTAL</span><span>21,93 €</span></div>
+        <div class="scan"></div>
       </div>
-      <div class="step reveal">
-        <div class="step-number">2</div>
-        <h3>Dinerova organiza todo sola</h3>
-        <p>Sin teclear nada: revisas el resultado y confirmas.</p>
+      <div class="badge-local" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Guardado solo en tu móvil</div>
+      <div class="movement" aria-hidden="true">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3v8a2 2 0 0 0 2 2v8M11 3v6M5 3v6M17 21V3c-2 1-3 3.5-3 7h3"/></svg></span>
+        <span><b>Supermercado</b><small>Alimentación · hoy</small></span>
+        <span class="amt">−21,93 €</span>
       </div>
-      <div class="step reveal">
-        <div class="step-number">3</div>
-        <h3>Consulta tu resumen cuando quieras</h3>
-        <p>Del día a día al balance anual, siempre a mano.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="pricing-band">
-    <div class="container" id="precio">
-      <p class="section-eyebrow reveal">Precio</p>
-      <h2 class="section-title reveal">Sin sorpresas, sin presión</h2>
-      <div class="pricing-card reveal">
-        <div class="pricing-badge">30 días de prueba gratuita, sin tarjeta</div>
-        <div class="pricing-amount">1€<span>/mes después</span></div>
-        <ul class="pricing-list">
-          <li>Sin anuncios</li>
-          <li>Sin límites artificiales de uso</li>
-          <li>Cancela cuando quieras</li>
-        </ul>
-        <a href="#lista-espera" class="btn btn-primary">Quiero probarla</a>
-        <p class="pricing-note">
-          Prueba la app con calma durante 30 días y decide después si te
-          compensa. Si no, simplemente no sigue.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="container download-section reveal">
-    <h2 class="section-title">Descarga Dinerova</h2>
-    <p class="hero-subtitle" style="margin-inline: auto;">
-      Dinerova está en pruebas privadas ahora mismo. En cuanto esté
-      publicada en Google Play, avisaremos primero a quien se haya
-      apuntado a la lista de espera.
-    </p>
-    <p class="download-note">
-      <a href="#lista-espera">↑ Apúntate a la lista de espera</a>
-    </p>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-content">
-    <span>© 2026 Dinerova</span>
-    <div class="footer-links">
-      <a href="privacidad.html">Política de privacidad</a>
-      <a href="eliminar-datos.html">Eliminar mis datos</a>
-      <a href="mailto:soporte@vblapps.com">Contacto</a>
-      <div class="footer-social"></div>
     </div>
   </div>
-</footer>
+</section>
 
-<script src="app.js"></script>
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="section-head rise">
+      <h2>Tus cuentas, sin que nadie más las vea</h2>
+      <p class="lead">La mayoría de apps de finanzas te piden conectar el banco y guardan tus movimientos en sus servidores. DineroVa funciona al revés.</p>
+    </div>
+    <div class="claims rise">
+      <div class="claim"><h3>Tu banco no se entera</h3><p>No hay que dar claves ni conectar cuentas. Apuntas lo que gastas con una foto del ticket o en dos toques, y ves tu dinero tal y como tú lo organizas.</p></div>
+      <div class="claim"><h3>Tus datos no salen del móvil</h3><p>Todo se guarda cifrado en tu teléfono. Sin servidores, sin nube y sin anuncios. Si cambias de móvil, te llevas tu historial con una copia de seguridad protegida con tu contraseña.</p></div>
+      <div class="claim"><h3>Hecha para tickets de aquí</h3><p>Entiende los tickets de supermercados, gasolineras y comercios españoles, separa el IVA cuando aparece y sugiere la categoría. Funciona sin internet.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap showcase">
+    <div class="phone rise"><img src="/assets/screenshots/dinerova-home-720.webp" srcset="/assets/screenshots/dinerova-home-360.webp 360w, /assets/screenshots/dinerova-home-720.webp 720w" sizes="(max-width: 600px) 78vw, 320px" width="720" height="1600" alt="Pantalla de inicio de DineroVa: saldo del mes de 1.720,16 €, últimos movimientos y presupuesto de alimentación" loading="lazy"></div>
+    <div class="rise">
+      <div class="section-head"><h2>Todo tu mes en una pantalla</h2><p class="lead">Ingresos, gastos y lo que te queda, siempre a la vista.</p></div>
+      <ul class="features">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M8 15h3"/></svg><div><b>Presupuesto mensual por categoría</b><span>Te avisa cuando te acercas al límite, sin dramas.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 2l4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14M7 22l-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></svg><div><b>Nómina, alquiler y suscripciones automáticas</b><span>Los registras una vez y se repiten cada mes.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 7c-1-1.5-2.8-2-4-2H9a6 6 0 0 0-6 6c0 2.4 1.4 4.4 3.5 5.4V20h3v-2h4v2h3v-3.2c1-.6 1.8-1.4 2.3-2.3H21v-4h-1.6"/><circle cx="15.5" cy="10.5" r=".5" fill="currentColor"/></svg><div><b>Huchas de ahorro</b><span>Aparta dinero para un viaje o un imprevisto sin perder de vista tu saldo real.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg><div><b>Resumen semanal, mensual y anual</b><span>Con una estimación orientativa de IVA e IRPF al cerrar el año.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><div><b>Bloqueo con huella o PIN</b><span>Nadie que coja tu móvil ve tus cuentas.</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="section-head rise">
+      <h2>Calculadoras gratis para tu dinero</h2>
+      <p class="lead">Sin registrarte y sin guardar nada: todo se calcula en tu navegador.</p>
+    </div>
+    <div class="stubs rise">
+      <a class="stub" href="/calculadora-sueldo-neto.html"><span class="stub-fig">1.654 €</span><h3>Sueldo neto 2026</h3><p>Del bruto anual a lo que cobras cada mes, con IRPF y Seguridad Social.</p><span class="go">Calcular mi sueldo</span></a>
+      <a class="stub" href="/presupuesto-50-30-20.html"><span class="stub-fig">50/30/20</span><h3>Presupuesto mensual</h3><p>Cuánto dedicar a gastos fijos, a caprichos y a ahorrar.</p><span class="go">Hacer mi presupuesto</span></a>
+      <a class="stub" href="/fondo-de-emergencia.html"><span class="stub-fig">6 meses</span><h3>Fondo de emergencia</h3><p>Cuánto necesitas apartar y cuándo lo tendrás.</p><span class="go">Calcular mi colchón</span></a>
+      <a class="stub" href="/calculadora-iva.html"><span class="stub-fig">21 %</span><h3>Calculadora de IVA</h3><p>Añade o quita el IVA a cualquier precio: 21, 10 o 4 %.</p><span class="go">Calcular el IVA</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="precio">
+  <div class="wrap">
+    <div class="price rise">
+      <div>
+        <h2>Pruébala un mes entero gratis</h2>
+        <p>Con todas las funciones y sin poner tarjeta. Si te convence, sigues por menos de lo que cuesta un café al mes.</p>
+        <div class="figures">
+          <div class="fig"><b>1,99 €</b><span>al mes</span></div>
+          <div class="fig"><b>14,99 €</b><span>al año (ahorras un 37 %)</span></div>
+        </div>
+        <ul><li>Sin anuncios</li><li>Sin límites artificiales</li><li>Cancelas cuando quieras desde Google Play</li></ul>
+      </div>
+      <div><a class="btn btn-play " href="https://play.google.com/store/apps/details?id=com.dinerova.app.dinerova" data-play rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M4.6 2.3c-.4.3-.6.8-.6 1.4v16.6c0 .6.2 1.1.6 1.4l9.3-9.7-9.3-9.7z"/><path d="M17.3 8.6 6.5 2.4l8.6 8.9 2.2-2.7zM15.1 12.7l-8.6 8.9 10.8-6.2-2.2-2.7zM20.6 10.6l-2.4-1.4-2.5 2.8 2.5 2.8 2.4-1.4c.9-.6.9-2.2 0-2.8z"/></svg><span><small>Disponible en</small>Google Play</span></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="preguntas"><div class="wrap"><div class="section-head"><h2>Preguntas frecuentes</h2></div><div class="faq"><details><summary>¿Tengo que conectar mi cuenta del banco?</summary><p>No. DineroVa no pide acceso a tu banco ni a tus tarjetas. Apuntas tus gastos escaneando el ticket o a mano, y tú decides qué entra.</p></details>
+<details><summary>¿Dónde se guardan mis datos?</summary><p>Solo en tu móvil, en una base de datos cifrada. No hay servidores propios ni nube, y no compartimos ni vendemos nada. Para cambiar de móvil puedes hacer una copia de seguridad cifrada con tu propia contraseña.</p></details>
+<details><summary>¿Funciona sin internet?</summary><p>Sí, todo funciona sin conexión, incluido el escaneo de tickets: el reconocimiento del texto se hace en el propio móvil.</p></details>
+<details><summary>¿Cuánto cuesta?</summary><p>Los primeros 30 días son gratis, con todas las funciones y sin poner tarjeta. Después cuesta 1,99 € al mes o 14,99 € al año. No tiene anuncios.</p></details>
+<details><summary>¿Qué pasa si no me suscribo al acabar la prueba?</summary><p>No pierdes nada: puedes seguir consultando todos tus datos. Para añadir movimientos nuevos necesitas la suscripción.</p></details>
+<details><summary>¿Está disponible para iPhone?</summary><p>De momento DineroVa está solo para Android, en Google Play.</p></details></div></div></section>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="/"><svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1C1712"/><path d="M64 12 L36 32 L36 88 A28 28 0 0 0 36 32" fill="none" stroke="#D9793F" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/></svg>DineroVa</a>
+      <p style="margin-top:12px">Control de gastos privado, hecho en España. Tus datos se quedan en tu móvil.</p>
+    </div>
+    <div>
+      <h4>Calculadoras</h4>
+      <ul>
+        <li><a href="/calculadora-sueldo-neto.html">Sueldo neto 2026</a></li>
+        <li><a href="/presupuesto-50-30-20.html">Presupuesto 50/30/20</a></li>
+        <li><a href="/fondo-de-emergencia.html">Fondo de emergencia</a></li>
+        <li><a href="/calculadora-iva.html">Calculadora de IVA</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>DineroVa</h4>
+      <ul>
+        <li><a href="https://play.google.com/store/apps/details?id=com.dinerova.app.dinerova" rel="noopener">Descargar en Google Play</a></li>
+        <li><a href="/privacidad.html">Política de privacidad</a></li>
+        <li><a href="/eliminar-datos.html">Eliminar mis datos</a></li>
+        <li><a href="mailto:soporte@vblapps.com">soporte@vblapps.com</a></li>
+      </ul>
+    </div>
+    <p class="legal">© 2026 VBLapps. Las calculadoras dan estimaciones orientativas y no sustituyen el consejo de un asesor fiscal o financiero.</p>
+  </div>
+</footer>
+<script src="/assets/js/site.js?v=20261112" defer></script>
 </body>
 </html>
